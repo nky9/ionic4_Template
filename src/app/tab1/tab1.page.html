@@ -1,13 +1,89 @@
 <ion-header>
-  <ion-toolbar>
-<ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-          </ion-buttons>
+  <ion-toolbar class="navbarsec">
+    <ion-buttons slot="start">
+      <ion-menu-button class="menu-btn" ></ion-menu-button>
+    </ion-buttons>
+    <ion-title routerLink="/" ><img src="assets/icon/hglogom.png"></ion-title>
 
-    <ion-title>tab1</ion-title>
+    <ion-buttons routerLink="/search" slot="end" >
+    <img class="img-head-icon"  src="assets/icon/search.png">
+    </ion-buttons>
+
+   <!--  <ion-buttons routerLink="/cart" slot="end" >
+    <img  class="img-head-icon" src="assets/icon/cart.png">
+    </ion-buttons> -->
+
+     <ion-buttons routerLink="/cart" slot="end" >
+    <img class="img-head-icon"  src="assets/icon/filter.png">
+    </ion-buttons>
+
+     
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<h2>TAB 1 PAGE</h2>
+	 <ion-slides pager="true" [options]="slideOpts">
+        <ion-slide>
+            <img src="assets/icon/s2.jpg" height="350">
+        </ion-slide>
+        <ion-slide>
+            <img src="assets/icon/s1.jpg" height="350">
+        </ion-slide>
+        <ion-slide>
+            <img src="assets/icon/s3.jpg" height="350">
+        </ion-slide>
+       
+    </ion-slides>
+
+    <ion-toolbar>
+        <ion-buttons slot="start">
+          <h2 class="head-text" >TRENDING OFFERS</h2>
+        </ion-buttons>
+
+    
+        <ion-buttons slot="end">
+          <ion-button class="view-all" > VIEW ALL </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+
+
+      
+<ion-slides [options]="sliderConfig2" class="bg-white" >
+      <ion-slide   >
+        <ion-card (click)="cartDetails()" >
+        <img src="assets/icon/men.jpg">
+         <ion-card-header class="card5">
+          <ion-card-title>Men,s Shirt</ion-card-title>
+           <ion-card-subtitle>₹ 400 <span class="heartsec"><ion-icon name="heart-empty"></ion-icon></span>
+           </ion-card-subtitle>
+         </ion-card-header>
+         <ion-card-content class="extraoff"> Extra 5% Off</ion-card-content>
+      </ion-card>
+      </ion-slide>
+
+      <ion-slide   >
+        <ion-card (click)="cartDetails()" >
+        <img src="assets/icon/men.jpg">
+         <ion-card-header class="card5">
+          <ion-card-title>Men,s Shirt</ion-card-title>
+           <ion-card-subtitle>₹ 400 <span class="heartsec"><ion-icon name="heart-empty"></ion-icon></span>
+           </ion-card-subtitle>
+         </ion-card-header>
+         <ion-card-content class="extraoff"> Extra 5% Off</ion-card-content>
+      </ion-card>
+      </ion-slide>
+      <ion-slide >
+         <ion-card (click)="cartDetails()" >
+        <img src="assets/icon/men.jpg">
+         <ion-card-header class="card5">
+          <ion-card-title>Men,s Shirt</ion-card-title>
+           <ion-card-subtitle>₹ 400 <span class="heartsec"><ion-icon name="heart-empty"></ion-icon></span>
+           </ion-card-subtitle>
+         </ion-card-header>
+         <ion-card-content class="extraoff"> Extra 5% Off</ion-card-content>
+      </ion-card>
+      </ion-slide>
+   
+    </ion-slides>
 </ion-content>

@@ -24,3 +24,23 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.img-btm-icon { width: 20px; height: 20px; }
+.img-head-icon { width: 20px; height: 20px; margin-right: 18px; }
+.menu-btn { color: #000033; }
+.cart-btn { color: #000033; width: 20px; height: 20px;}
+.view-all { color: #000033;
+    font-size: 12px;
+    border: 1px solid #000033 ;
+    border-radius: 40px;
+    padding: 0px;
+    padding: 0px 5px;
+    height: 25px!important;
+} 
+.head-text {
+	margin-top: 10px;
+    font-size: 15px;
+    color: #000033;
+    letter-spacing: 1px;
+}
+
